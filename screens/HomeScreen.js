@@ -6,16 +6,21 @@ import {
   CardItem,
   Thumbnail,
   Content,
+  Input,
   Footer,
   FooterTab,
+  Item,
   Button,
   Left,
   Body,
+  Header,
   Icon,
   Text,
-  Right
+  Right,
+  View
 } from "native-base";
 import { staticdata } from '../services/dummies/homedata';
+import { userdata } from '../services/dummies/homeuserdata';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -25,7 +30,8 @@ export default class HomeScreen extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      data : staticdata
+      data : staticdata,
+      user: userdata
     }
   }
 
@@ -56,14 +62,17 @@ export default class HomeScreen extends React.Component {
           <Left>
             <Button transparent textStyle={{color: '#87838B'}}>
               <Icon name="star" />
-              <Text>{this.state.data[i].artistRating + ' starts'}</Text>
+              <Text style={{marginLeft: -10}}>{this.state.data[i].artistRating}</Text>
+            </Button>
+            <Button transparent textStyle={{color: '#87838B'}} style={{marginLeft: -10}}>
+              <Icon name="heart" />
+              <Text style={{marginLeft: -10}}>{this.state.data[i].productRaiting}</Text>
             </Button>
           </Left>
           <Right>
             <Button transparent textStyle={{color: '#87838B'}}
-             onPress={() => this.props.navigation.navigate("ProfileDetail")}
-            >
-              <Text>Detalle</Text>
+             onPress={() => this.props.navigation.navigate("ProfileDetail")}>
+              <Text>Lo Quiero!</Text>
             </Button>
           </Right>
         </CardItem>
@@ -73,7 +82,7 @@ export default class HomeScreen extends React.Component {
 
     return (
       <Container>
-        <Content>        
+        <Content style={{marginTop: -6}}>       
          {cards}
         </Content>
         <Footer>

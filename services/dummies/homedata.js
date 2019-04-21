@@ -8,7 +8,8 @@ export const staticdata = [
         productId: 1,
         productName: 'Contrast',
         productDescription: 'Mixed tehcnique oleo over canvas',
-        productImageUrl: 'https://assets.saatchiart.com/saatchi/885839/art/3846361/2916244-BVWVBYYK-32.jpg'
+        productImageUrl: 'https://assets.saatchiart.com/saatchi/885839/art/3846361/2916244-BVWVBYYK-32.jpg',
+        productRaiting: 10
     },
     {
         artistId: 2,
@@ -19,7 +20,8 @@ export const staticdata = [
         productId: 2,
         productName: 'Stuff',
         productDescription: 'Urban graffity',
-        productImageUrl: 'https://thumbs.dreamstime.com/z/graffiti-wall-background-urban-street-art-design-90123672.jpg'
+        productImageUrl: 'https://thumbs.dreamstime.com/z/graffiti-wall-background-urban-street-art-design-90123672.jpg',
+        productRaiting: 10
     },
     {
         artistId: 3,
@@ -30,7 +32,8 @@ export const staticdata = [
         productId: 324,
         productName: 'Ciudad en llamas',
         productDescription: 'Wood work',
-        productImageUrl: 'https://thumbs.dreamstime.com/z/wood-table-top-light-gold-cafe-restaurant-background-selective-focus-118715853.jpg'
+        productImageUrl: 'https://thumbs.dreamstime.com/z/wood-table-top-light-gold-cafe-restaurant-background-selective-focus-118715853.jpg',
+        productRaiting: 10
     },
     {
         artistId: 4,
@@ -41,7 +44,8 @@ export const staticdata = [
         productId: 3,
         productName: 'Loterry',
         productDescription: 'Iron Art',
-        productImageUrl: 'https://thumbs.dreamstime.com/z/iron-curtain-memoria-budapest-hungary-historical-monument-memorial-front-terror-house-museum-114033884.jpg'
+        productImageUrl: 'https://thumbs.dreamstime.com/z/iron-curtain-memoria-budapest-hungary-historical-monument-memorial-front-terror-house-museum-114033884.jpg',
+        productRaiting: 10
     },
     {
         artistId: 5,
@@ -52,6 +56,7 @@ export const staticdata = [
         productId: 4,
         productName: 'To the Form',
         productDescription: 'Mixed tehcnique oleo over canvas',
-        productImageUrl: 'https://thumbs.dreamstime.com/z/louisiana-museum-modern-art-denmark-humleb%C3%A6k-humlebaek-europe-123665303.jpg'
+        productImageUrl: 'https://thumbs.dreamstime.com/z/louisiana-museum-modern-art-denmark-humleb%C3%A6k-humlebaek-europe-123665303.jpg',
+        productRaiting: 10
     }
 ] 
